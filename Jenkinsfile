@@ -15,7 +15,7 @@ pipeline {
                  node --version
                  npm --version
                  pwd
-                 npm cache clean --force
+                 sudo npm cache clean --force
                  rm -rf node_modules package-lock.json
                  npm ci
                  npm run build 
